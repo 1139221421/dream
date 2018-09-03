@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="10s">
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %5level %logger : %msg %n %throwable</pattern>
+		</encoder>
+	</appender>
+
+    <logger name="com.mchange" level="DEBUG"/>
+  	<logger name="org.springframework" level="DEBUG"/>
+  	<logger name="freemarker" level="DEBUG"/>
+  	<!--<logger name="net.sf.ehcache" level="WARN"/>-->
+
+
+	<logger name="com.lxl.dao" level="DEBUG"/>
+	<logger name="com.lxl.listener.SystemListener" level="WARN"/>
+
+	<logger name="org.mybatis" level="DEBUG"/>
+	<!--<logger name="com.lxl.dao.UserMapper" level="ERROR"/>-->
+	<logger name="net.htmlparser.jericho" level="NONE"/>
+	<!--<logger name="org.apache.ibatis" level="WARN"/>-->
+	<logger name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" level="ERROR"/>
+	<!--<logger name="com.mchange.v2.c3p0.cfg.C3P0Config" level="ERROR"/>-->
+
+	<root>
+		<appender-ref ref="STDOUT"/>
+	</root>
+</configuration>  

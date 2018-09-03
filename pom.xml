@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.lxl</groupId>
+	<artifactId>dream</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- 源JDK版本     -->
+		<source.jdk.version>1.7</source.jdk.version>
+		<!-- 目标JDK版本 -->
+		<target.jdk.version>1.7</target.jdk.version>
+	</properties>
+
+	<modules>
+		<module>dream_dao</module>
+		<module>dream_service</module>
+		<module>dream_model</module>
+		<module>dream_manager</module>
+		<module>dream_common</module>
+		<module>dream_front</module>
+		<module>dream_common</module>
+		<module>dream_model</module>
+		<module>dream_dao</module>
+	</modules>
+
+	<dependencies>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>utf8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
